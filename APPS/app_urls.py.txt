@@ -1,0 +1,12 @@
+from django.urls import path,re_path
+
+from . import views
+
+urlpatterns = [
+    path(r'', views.index, name='list'),
+    #path(r'/list', views.index, name='list'),
+    #path('/create', create_polls.as_view(),name='create'),
+    #path('/get/<pk>', get_polls.as_view(), name='get_by_id'),
+    #path('/update/<pk>', update_polls.as_view(),name='update'),
+    #path('/destroy/<pk>', delete_polls.as_view(),name='delete'),
+]
